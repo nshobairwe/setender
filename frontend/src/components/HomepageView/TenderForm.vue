@@ -17,7 +17,7 @@ const submitTender = async () => {
     notes: notes.value,
   };
 
-  emailjs.send(service_gxnnang, template_x7la3mr, templateParams, REAU7BcwIG7vNJ29E)
+  emailjs.send("service_gxnnang", "template_x7la3mr", templateParams, "REAU7BcwIG7vNJ29E")
     .then(() => {
       alert("Tender submitted! Email sent.");
       name.value = email.value = eventDate.value = guests.value = notes.value = "";
